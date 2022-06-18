@@ -20,8 +20,7 @@ export default siteConfig({
   twitter: 'mrizklh',
   github: 'mrizklh',
   linkedin: 'mrizklh',
-  kaggle: 'mrizklh',
-  // newsletter: '#', // optional newsletter URL
+  // newsletter: 'medium.com/narasi', // optional newsletter URL
   // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
 
   // default notion icon and cover images for site-wide consistency (optional)
