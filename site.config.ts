@@ -52,13 +52,23 @@ export default siteConfig({
   //navigationStyle: 'default'
    navigationStyle: 'custom',
    navigationLinks: [
-  {
+    {
+      title: "MOOCs",
+      pageId: '289b8a386d2b4578bdb6b2a33e074181'
+
+    },
+    {
+      title: 'Books',
+      pageId: 'b9fbf5bbb87645fb91866bc5aa766a40'
+
+    },
+    {
     title: 'About',
     pageId: '5a4ad5d732e64e9cb73978e4a24385f2'
- },
- {
+    },
+    {
     title: 'Contact',
     pageId: '9e4b30c7cbff4beabfbd56f97e7f3a15'
-   }
+  }
  ]
 })
