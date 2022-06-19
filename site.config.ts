@@ -6,7 +6,7 @@ export default siteConfig({
 
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
-  rootNotionSpaceId: "",
+  rootNotionSpaceId: "f8b943dc-6623-493c-af87-54ddbb55a5d6",
 
   // basic site info (required)
   name: 'A Nobody Blog',
@@ -35,7 +35,8 @@ export default siteConfig({
   // whether or not redis is enabled for caching generated preview images (optional)
   // NOTE: if you enable redis, you need to set the `REDIS_HOST` and `REDIS_PASSWORD`
   // environment variables. see the readme for more info
-  isRedisEnabled: false,
+  isRedisEnabled: true,
+  
 
   // map of notion page IDs to URL paths (optional)
   // any pages defined here will override their default URL paths

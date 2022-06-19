@@ -9,7 +9,7 @@ export async function pageAcl({
     return {
       error: {
         statusCode: 404,
-        message: 'Unable to resolve notion site'
+        message: 'Mohon Maaf direktori yang anda cari tidak ada. mungkin coba balik ke rizki.me'
       }
     }
   }
@@ -18,7 +18,7 @@ export async function pageAcl({
     return {
       error: {
         statusCode: 404,
-        message: `Unable to resolve page for domain "${site.domain}". Notion page "${pageId}" not found.`
+        message: `Unable to resolve page for domain "${site.domain}". ditectory "${pageId}" not found.`
       }
     }
   }
@@ -30,7 +30,7 @@ export async function pageAcl({
     return {
       error: {
         statusCode: 404,
-        message: `Unable to resolve page for domain "${site.domain}". Notion page "${pageId}" invalid data.`
+        message: `Unable to resolve page for domain "${site.domain}". directory "${pageId}" invalid data.`
       }
     }
   }
