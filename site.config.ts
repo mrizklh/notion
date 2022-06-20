@@ -41,12 +41,12 @@ export default siteConfig({
   // map of notion page IDs to URL paths (optional)
   // any pages defined here will override their default URL paths
   // example:
-  //
+  // //
   pageUrlOverrides: {
      '/moocs': '289b8a386d2b4578bdb6b2a33e074181',
      '/books': 'b9fbf5bbb87645fb91866bc5aa766a40'
    },
- // pageUrlOverrides: null,
+//  pageUrlOverrides: null,
 
   // whether to use the default notion navigation style or a custom one with links to
   // important pages
