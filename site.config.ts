@@ -9,12 +9,12 @@ export default siteConfig({
   rootNotionSpaceId: "f8b943dc-6623-493c-af87-54ddbb55a5d6",
 
   // basic site info (required)
-  name: 'A Nobody Blog',
+  name: 'Muhammad Rizkillah',
   domain: 'www.rizki.me',
   author: 'Muhammad Rizkillah',
 
   // open graph metadata (optional)
-  description: 'Blog about me',
+  description: 'This is Muhammad Rizkillah\'s personal website. his twitter account is twtitter.com/mrizklh',
 
   // social usernames (optional)
   twitter: 'mrizklh',
