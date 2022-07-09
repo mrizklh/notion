@@ -43,8 +43,8 @@ export default siteConfig({
   // example:
   // //
   pageUrlOverrides: {
-     '/moocs': '289b8a386d2b4578bdb6b2a33e074181',
-     '/books': 'b9fbf5bbb87645fb91866bc5aa766a40'
+     '/News': '289b8a386d2b4578bdb6b2a33e074181',
+     '/SKIA': 'b9fbf5bbb87645fb91866bc5aa766a40'
    },
 //  pageUrlOverrides: null,
 
@@ -54,12 +54,12 @@ export default siteConfig({
   navigationStyle: 'custom',
   navigationLinks: [
     {
-      title: "MOOCs",
+      title: "News",
       pageId: '289b8a386d2b4578bdb6b2a33e074181'
 
     },
     {
-      title: 'Books',
+      title: 'SKIA',
       pageId: 'b9fbf5bbb87645fb91866bc5aa766a40'
 
     },
