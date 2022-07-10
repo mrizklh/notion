@@ -43,8 +43,13 @@ export default siteConfig({
   //
   pageUrlOverrides: {
      '/News': '289b8a386d2b4578bdb6b2a33e074181',
+<<<<<<< HEAD
      '/learn': 'b9fbf5bbb87645fb91866bc5aa766a40'
   },
+=======
+     '/stud': 'b9fbf5bbb87645fb91866bc5aa766a40'
+   },
+>>>>>>> refs/remotes/origin/rizki
 //  pageUrlOverrides: null,
 
   // whether to use the default notion navigation style or a custom one with links to
@@ -58,7 +63,11 @@ export default siteConfig({
 
     },
     {
+<<<<<<< HEAD
       title: 'SKIA',
+=======
+      title: 'Selfstud',
+>>>>>>> refs/remotes/origin/rizki
       pageId: 'b9fbf5bbb87645fb91866bc5aa766a40'
 
     },
