@@ -4,6 +4,16 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 })
 
 module.exports = withBundleAnalyzer({
+  
+  async redirects() {
+    return [
+      {
+        source: '/google',
+        destination: 'https://google.com',
+        permanent: true,
+      },
+    ]
+  },
   staticPageGenerationTimeout: 300,
   images: {
     domains: [

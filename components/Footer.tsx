@@ -101,8 +101,8 @@ export const FooterImpl: React.FC = () => {
         {config.newsletter && (
           <a
             className={styles.newsletter}
-            href={`${config.newsletter}`}
-            title={`Newsletter ${config.author}`}
+            href={'https://medium.com/narasi'}
+            title={`Medium ${config.author}`}
             target='_blank'
             rel='noopener noreferrer'
           >

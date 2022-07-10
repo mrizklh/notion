@@ -14,14 +14,13 @@ export default siteConfig({
   author: 'Muhammad Rizkillah',
 
   // open graph metadata (optional)
-  description: 'This is Muhammad Rizkillah\'s personal website. his twitter account is twtitter.com/mrizklh',
-
+  description: 'Muhammad Rizkillah meruapakan seorang mahasiswa Universitas Indonesia (UI), www.rizki.me merupakan personal website sekaligus berita terbaru tentang teknologi, blog.rizki.me merupakan dokumentasi dari hasil belajar Muhammad Rizkillah.',
   // social usernames (optional)
   twitter: 'mrizklh',
   github: 'mrizklh',
   linkedin: 'mrizklh',
-  // newsletter: 'medium.com/narasi', // optional newsletter URL
-  // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
+  newsletter: 'medium.com/narasi', // optional newsletter URL
+  youtube: 'channel/UCsN2cgzKBFkCOG_XsnTtiBQ', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
 
   // default notion icon and cover images for site-wide consistency (optional)
   // page-specific values will override these site-wide defaults
@@ -41,11 +40,11 @@ export default siteConfig({
   // map of notion page IDs to URL paths (optional)
   // any pages defined here will override their default URL paths
   // example:
-  // //
+  //
   pageUrlOverrides: {
      '/News': '289b8a386d2b4578bdb6b2a33e074181',
-     '/SKIA': 'b9fbf5bbb87645fb91866bc5aa766a40'
-   },
+     '/learn': 'b9fbf5bbb87645fb91866bc5aa766a40'
+  },
 //  pageUrlOverrides: null,
 
   // whether to use the default notion navigation style or a custom one with links to

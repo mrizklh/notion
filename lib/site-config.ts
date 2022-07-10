@@ -29,6 +29,7 @@ export interface SiteConfig {
   includeNotionIdInUrls?: boolean
   pageUrlOverrides?: types.PageUrlOverridesMap
   pageUrlAdditions?: types.PageUrlOverridesMap
+  urlPathPrefix?: string
 
   navigationStyle?: types.NavigationStyle
   navigationLinks?: Array<NavigationLink>
