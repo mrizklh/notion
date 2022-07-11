@@ -48,7 +48,7 @@ const socialLinks: SocialLink[] = [
 
   config.newsletter && {
     name: 'newsletter',
-    href: `${config.newsletter}`,
+    href: `https://medium.com/narasi`,
     title: `Newsletter ${config.author}`,
     icon: (
       <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>
