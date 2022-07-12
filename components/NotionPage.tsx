@@ -284,9 +284,19 @@ export const NotionPage: React.FC<types.PageProps> = ({
         searchNotion={config.isSearchEnabled ? searchNotion : null}
         pageAside={pageAside}
         footer={footer}
+        
       />
+      <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-TK3N57X"
+        height="0"
+        width="0"
+      />
+      </noscript>
 
       <GitHubShareButton />
     </>
+    
   )
 }
+
