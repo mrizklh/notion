@@ -19,12 +19,10 @@ import 'styles/notion.css'
 // global style overrides for prism theme (optional)
 import 'styles/prism-theme.css'
 
-import * as React from 'react'
 import * as Fathom from 'fathom-client'
 import type { AppProps } from 'next/app'
 import { useRouter } from 'next/router'
 import posthog from 'posthog-js'
-
 import { bootstrap } from 'lib/bootstrap-client'
 import {
   isServer,
@@ -38,34 +36,39 @@ if (!isServer) {
   bootstrap()
 }
 
-export default function App({ Component, pageProps }: AppProps) {
-  const router = useRouter()
+import Head from 'next/head';
+import React, { useEffect } from 'react';
+import Script from 'next/script';
+import Router from 'next/router';
 
-  React.useEffect(() => {
-    function onRouteChangeComplete() {
-      if (fathomId) {
-        Fathom.trackPageview()
-      }
 
-      if (posthogId) {
-        posthog.capture('$pageview')
-      }
-    }
+function CustomApp({ Component, pageProps, router }: AppProps) {
 
-    if (fathomId) {
-      Fathom.load(fathomId, fathomConfig)
-    }
+    return (
+        <>
+            <Script strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`} />
 
-    if (posthogId) {
-      posthog.init(posthogId, posthogConfig)
-    }
+            <Script strategy="lazyOnload">
+                {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+                    page_path: window.location.pathname,
+                    });
+                `}
+            </Script>
+            
+            
+            <Head>
+                <title>Welcome!</title>
+                <meta name="viewport" content="initial-scale=1, width=device-width" />
+            </Head>
 
-    router.events.on('routeChangeComplete', onRouteChangeComplete)
-
-    return () => {
-      router.events.off('routeChangeComplete', onRouteChangeComplete)
-    }
-  }, [router.events])
-
-  return <Component {...pageProps} />
+            <Component {...pageProps} />
+        </>
+    );
 }
+
+
+export default CustomApp;
